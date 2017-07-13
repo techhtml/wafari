@@ -1,0 +1,41 @@
+.wafari {
+  position:relative;
+  max-width:1080px;
+  margin:auto;
+  min-height:100vh;
+  padding:2em;
+  box-sizing:border-box;
+  background:#ffffff;
+}
+.word-list {
+  display:flex;
+  flex-wrap:wrap;
+}
+.btn-add-word {
+  display:block;
+  position:fixed;
+  right:2em;
+  bottom:2em;
+  padding:1.5em;
+  background:#d32f2f;
+  color:#ffffff;
+  border-radius:50%;
+  box-shadow:1px 1px 5px rgba(0,0,0,0.8);
+}
+.btn-add-word i {
+  font-size:2em;
+}
+
+@media (max-width:800px) {
+  .wafari {
+    padding:0;
+    padding-bottom:100px;
+  }
+  .btn-add-word {
+    position:fixed;
+    right:1em;
+    bottom:1em;
+    transform:translate(0, 0);
+    z-index:10;
+  }
+}

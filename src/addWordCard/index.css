@@ -1,0 +1,44 @@
+.word-box {
+  position:fixed;
+  right:35px;
+  bottom:0;
+  width:350px;
+  background:#fff;
+  box-shadow:0 0 10px rgba(99,99,99,0.5);
+  z-index:100;
+}
+.word-box header {
+  display:flex;
+  color:#fff;
+  background:#424242;
+  padding:1em;
+  justify-content: space-between;
+}
+.word-box header h1 {
+  margin:0;
+}
+.word-box header button {
+  padding:0;
+  color:inherit;
+}
+.word-box input,
+.word-box textarea {
+  display:block;
+  width:100%;
+  border:0;
+  outline:none;
+}
+.word-box input {
+  font-weight:bold;
+}
+.input-box {
+  padding:1em;
+}
+
+@media (max-width:800px) {
+  .word-box {
+    right:50%;
+    top:50%;
+    transform:translate(50%, -50%);
+  }
+}
